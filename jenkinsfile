@@ -5,31 +5,24 @@ pipeline {
     }
 
     stages {
-        stage('gvrproject') {
+        stage('GVR PROJECT') {
             steps {
-                echo 'Started gvrproject'
+                echo 'Started GVR PROJECT'
             }
         }
-        stage('clone') {
+        stage('CLONE') {
             steps {
                 git credentialsId: 'de1fb72f-a14a-48da-8e3a-6b8c3ab3427e', url: 'https://github.com/GVenkataramesh/groovyscript.git'
             }
         }
-        stage('build') {
+        stage('BUILD') {
             steps {
                 sh "mvn clean install"
             }
         }
-        stage('deploy') {
+        stage('DEPLOY') {
             steps {
                 deploy adapters: [tomcat9(credentialsId: '7356f8ee-5789-4f2d-b53d-64d264795c77', path: '', url: 'http://192.168.79.131:8081/')], contextPath: 'gvr6999', war: '**/*.war'
             }
         }
-        stage('Sir') {
-            steps {
-                echo 'Thank you  Prasad sir'
-            }
-        }
-
-    }
-}
+     }
