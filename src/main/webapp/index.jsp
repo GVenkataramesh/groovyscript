@@ -21,7 +21,7 @@ color: green;
 }
 
 h2{
-color:yellow;
+color:blue;
 }
 image{
 width:1000px;
