@@ -22,7 +22,7 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                deploy adapters: [tomcat9(credentialsId: '7356f8ee-5789-4f2d-b53d-64d264795c77', path: '', url: 'http://192.168.79.130:8081/')], contextPath: 'gvr6999', war: '**/*.war'
+                deploy adapters: [tomcat9(credentialsId: '7356f8ee-5789-4f2d-b53d-64d264795c77', path: '', url: 'http://192.168.79.131:8081/')], contextPath: 'gvr6999', war: '**/*.war'
             }
         }
         stage('Sir') {
