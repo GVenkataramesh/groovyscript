@@ -14,14 +14,14 @@ margin-top:10px;
 
 h1{
 font-size:35px;
-color: blue;
+color: green;
     margin-top: -501px;
     
     width: 600px;
 }
 
 h2{
-color:red;
+color:yellow;
 }
 image{
 width:1000px;
@@ -32,13 +32,13 @@ height:400px;
 <div class="imgcontainer ">
 <img src="https://transit.avivaromm.com/wp-content/uploads/2017/10/coursesbackground-1-1480x586.png" width="1300" height="550">
 <div class="container">
-<h1>WELCOME TO MEESEVACENTER UYYALAWADA!</h1>
+<h1>WELCOME TO BANGALORE!</h1>
 
 <br>
 <h2>Contact us:-</h2>
 
-<h2>GVRAMANA</h2>
-<h2>+91-9441053373</h2>
+<h2>GVRAMESH</h2>
+<h2>+91-9999999999</h2>
 
 </div>
 </div>
