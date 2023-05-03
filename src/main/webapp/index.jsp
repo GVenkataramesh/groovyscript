@@ -11,6 +11,7 @@
   margin-left: 75px;
 margin-top:10px;
 }
+
 h1{
 font-size:35px;
 color: blue;
@@ -18,6 +19,7 @@ color: blue;
     
     width: 600px;
 }
+
 h2{
 color:red;
 }
@@ -42,3 +44,4 @@ height:400px;
 </div>
 </body>
 </html>
+
