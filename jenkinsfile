@@ -1,29 +1,27 @@
 pipeline {
     agent any
-    environment {
-        PATH= "/opt/Maven/apache-maven-3.9.1/bin:$PATH"
-    }
 
     stages {
-        stage('GVR PROJECT') {
+        stage('Dev') {
             steps {
-                echo 'Started GVR PROJECT'
+                echo 'Hello Dev-Stage'
+                build quietPeriod: 5, job: 'Tomcat-Docker'
+
             }
         }
-        stage('CLONE') {
+        stages {
+        stage('Test') {
             steps {
-                git credentialsId: 'de1fb72f-a14a-48da-8e3a-6b8c3ab3427e', url: 'https://github.com/GVenkataramesh/groovyscript.git'
-            }
+                echo 'Hello Test-Stage'
+            }   build quietPeriod: 5, job: 'Tomcat-Linux'
+ 
         }
-        stage('BUILD') {
+        stages {
+        stage('Prod') {
             steps {
-                sh "mvn clean install"
+                echo 'Hello Prod-stage'
+                build quietPeriod: 5, job: 'Tomcat-AWS'
             }
-        }
-        stage('DEPLOY') {
-            steps {
-                deploy adapters: [tomcat9(credentialsId: '7356f8ee-5789-4f2d-b53d-64d264795c77', path: '', url: 'http://192.168.79.131:8081/')], contextPath: 'gvr6999', war: '**/*.war'
-            }
-        }
-     }
+        }    
+    }
 }
