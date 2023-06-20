@@ -6,22 +6,20 @@ pipeline {
             steps {
                 echo 'Hello Dev-Stage'
                 build quietPeriod: 5, job: 'Tomcat-Docker'
-
             }
         }
-        stages {
+     stages {
         stage('Test') {
             steps {
                 echo 'Hello Test-Stage'
-            }   build quietPeriod: 5, job: 'Tomcat-Linux'
- 
+                build quietPeriod: 5, job: 'Tomcat-Docker'
+            }
         }
-        stages {
+     stages {
         stage('Prod') {
             steps {
-                echo 'Hello Prod-stage'
-                build quietPeriod: 5, job: 'Tomcat-AWS'
+                echo 'Hello Prod-Stage'
+                build quietPeriod: 5, job: 'Tomcat-Docker'
             }
-        }    
-    }
+        }
 }
