@@ -22,4 +22,5 @@ pipeline {
                 build quietPeriod: 5, job: 'Tomcat-Docker'
             }
         }
+    }
 }
