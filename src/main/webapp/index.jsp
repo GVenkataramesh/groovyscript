@@ -1,47 +1,23 @@
-<!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
-</head>
 <style>
-.container {
-  
-  width: 400px;
-  height:550px;
-  margin-left: 75px;
-margin-top:10px;
-}
-
-h1{
-font-size:35px;
-color: green;
-    margin-top: -501px;
-    
-    width: 600px;
-}
-
-h2{
-color:blue;
-}
-image{
-width:1000px;
-height:400px;
+body  {
+  background-image: url("paper.gif");
+  background-color: #cccccc;
 }
 </style>
+</head>
 <body>
-<div class="imgcontainer ">
-<img src="https://transit.avivaromm.com/wp-content/uploads/2017/10/coursesbackground-1-1480x586.png" width="1300" height="550">
-<div class="container">
-<h1>WELCOME TO BANGALORE!</h1>
+<h1 style="background-color:orange;">WELCOME TO MEESEVA CENTER UYYALAWADA</h1>
+<h1 style="background-color:white;">All Meeseva Services & Online Services apply here,</h1>
+<p style="background-color:green;">
 
-<br>
-<h2>Contact us:-</h2>
+Contact us: G.V.Ramana Cell NO:9441053373
+</p>
 
-<h2>GVRAMESH</h2>
-<h2>+91-9999999999</h2>
+<a href="https://ibb.co/yBTKDZJ"><img src="https://i.ibb.co/rfPqgzJ/meeseva-2.jpg" alt="meeseva-2" border="10"></a>
 
-</div>
-</div>
+<h1 style="background-color:red;">Adress: Uyyalawada Village (Vil & Mdl) Nandyal Dist A.P</h1>
+
 </body>
 </html>
-
